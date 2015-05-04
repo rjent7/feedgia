@@ -7,6 +7,12 @@
       <div class="panel-body">
         <p><%= pin.description %></p>
         <p><strong><%= pin.user.name if pin.user %></strong></p>
+        <%= link_to like_pin_path(pin), class: "like", method: :put do %>
+          <button type="button" class="btn btn-success" aria-label="Left Align">
+            <span class="glyphicon glyphicon-heart-empty glyphicon-align-center" aria-hidden="true"></span>
+            <span class="badge"><%= pin.get_upvotes.size %></span>
+          </button>
+        <% end %>
         
         <% if pin.user == current_user %>
           <div class="actions">

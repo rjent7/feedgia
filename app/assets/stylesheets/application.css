@@ -14,3 +14,7 @@
  *= require 'masonry/transitions'
  *= require_self
  */
+
+.like:hover {
+	text-decoration: none;
+}
