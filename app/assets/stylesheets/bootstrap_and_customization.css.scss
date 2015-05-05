@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 $body-bg:                                    white;
 $font-family-sans-serif:                	'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -17,10 +19,27 @@ $jumbotron-bg:                               white;
 
 .navbar-brand {
      font-weight: bold;
+     font-family: 'Raleway', sans-serif;
 }
 
 body {
 	background-image: image-url('congruent_pentagon.png');
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+.jumbotron {
+	background-image: image-url('restaurant_icons.jpg');
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+.jumbotron h1 {
+	font-family: 'Marck Script', cursive;
+}
+
+.panel-body {
+	background-image: image-url('confectionary.png');
 	background-repeat: repeat-y;
 	background-size: 100%;
 }
