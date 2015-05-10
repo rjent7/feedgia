@@ -13,7 +13,7 @@
             <span class="badge"><%= pin.get_upvotes.size %></span>
           </button>
         <% end %>
-        
+
         <% if pin.user == current_user %>
           <div class="actions">
             <%= link_to edit_pin_path(pin) do %>

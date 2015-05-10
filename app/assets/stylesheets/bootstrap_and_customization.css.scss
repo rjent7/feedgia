@@ -21,6 +21,7 @@ $jumbotron-bg:                               white;
 .navbar-brand {
      font-family: 'Poiret One', cursive;
      position: center;
+     font-size: 27px;
 }
 
 body {
@@ -33,7 +34,7 @@ body {
 .jumbotron {
 	background-image: image-url('backgounr.jpg');
 	background-repeat: no-repeat;
-	background-size: 130%;
+	background-size: 140%;
 }
 
 .jumbotron h1 {
@@ -48,6 +49,4 @@ body {
 	background-image: url('restaurant_icons.jpg');
 	background-repeat: repeat-y;
 	background-size: 100%;
-	font-family: 'Poiret One', cursive;
-	font-size: 30;
 }
