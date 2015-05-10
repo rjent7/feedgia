@@ -25,6 +25,7 @@ body {
 	background-image: image-url('congruent_pentagon.png');
 	background-repeat: repeat-y;
 	background-size: 100%;
+	padding-top: 70px;
 }
 
 .jumbotron {
@@ -41,12 +42,4 @@ body {
 	background-image: image-url('photography.png');
 	background-repeat: repeat-y;
 	background-size: 100%;
-}
-
-.container {
-	width: 100%;
-}
-
-.panel-heading h1 {
-	padding-top: 45px;
 }
