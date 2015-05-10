@@ -43,15 +43,10 @@ body {
 	background-size: 100%;
 }
 
-.block {
-	position: relative;
+.container {
 	width: 100%;
-	padding: 60px 0px;
-	text-align: center;
-	background-image: image-url('restaurant_icons.jpg');
-	background-size: 100%;
 }
 
-.block h1 {
-	font-family: 'Marck Script', cursive;
+.panel-heading h1 {
+	padding-top: 45px;
 }
