@@ -35,6 +35,7 @@ body {
 	background-image: image-url('backgounr.jpg');
 	background-repeat: no-repeat;
 	background-size: 190%;
+	font-family: 'Poiret One', cursive;
 }
 
 .jumbotron h1 {
@@ -49,4 +50,8 @@ body {
 	background-image: url('restaurant_icons.jpg');
 	background-repeat: repeat-y;
 	background-size: 100%;
+}
+
+.panel-title {
+	font-family: 'Poiret One', cursive;
 }
