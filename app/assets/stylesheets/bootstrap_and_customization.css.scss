@@ -34,8 +34,10 @@ body {
 .jumbotron {
 	background-image: image-url('backgounr.jpg');
 	background-repeat: no-repeat;
-	background-size: 190%;
+	background-size: cover;
 	font-family: 'Poiret One', cursive;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .jumbotron h1 {
