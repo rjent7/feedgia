@@ -39,9 +39,9 @@ class PinsController < ApplicationController
     redirect_to pins_url
   end
 
-  def upvote
-    @pin.upvote_from current_user
-    redirect_to pins_path
+ def upvote
+   @pin.upvote_from current_user
+   redirect_to pins_path
   end
 
   private
