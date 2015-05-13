@@ -205,6 +205,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  json (~> 1.8.2)
   masonry-rails (~> 0.2.0)
   paperclip!
   pg
