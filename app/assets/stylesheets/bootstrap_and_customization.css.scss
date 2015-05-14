@@ -25,22 +25,24 @@ $jumbotron-bg:                               white;
 }
 
 body {
-	background-image: image-url('stardust.png');
-	background-repeat: repeat-y;
-	background-size: 100%;
+	background-image: url('brickwallgreen.jpg');
+	background-size: cover;
 	padding-top: 70px;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .jumbotron {
-	background-image: image-url('backgounr.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Poiret One', cursive;
 	background-position: center;
+	background: rgba(0,0,0,0.5);
 }
 
 .jumbotron h1 {
 	font-family: 'Poiret One', cursive;
+	color: black;
 }
 
 .jumbotron p {
