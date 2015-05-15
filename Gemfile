@@ -17,7 +17,6 @@ gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0.5'
 gem 'will_paginate-bootstrap'
 gem 'acts_as_votable'
-gem 'json', '~> 1.8.2'
 
 
 group :development, :test do
