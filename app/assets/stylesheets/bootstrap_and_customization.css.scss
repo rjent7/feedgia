@@ -25,10 +25,11 @@ $jumbotron-bg:                               white;
 }
 
 body {
-	background-image: image-url('brickwallgreen.jpg');
+	background-image: image-url('abstract-background-trigon.jpg');
 	background-size: cover;
 	padding-top: 70px;
 	background-position: center;
+	background-attachment: fixed;
 }
 
 .jumbotron {
