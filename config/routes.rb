@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root "pins#index"
   get "about" => "pages#about"
+  get "index" => "pages#index"
   
   resources :pins do
     member do
