@@ -26,9 +26,9 @@ $jumbotron-bg:                               white;
 
 body {
 	background-image: image-url('abstract-background-trigon.jpg');
-	background-size: cover;
+	background-size: auto;
 	padding-top: 70px;
-	background-position: center;
+	background-repeat: repeat-y;
 }
 
 .jumbotron {
