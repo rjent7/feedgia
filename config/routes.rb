@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root "pins#index"
   get "about" => "pages#about"
   get "index" => "pages#index"
-  
+   
   resources :pins do
     member do
       put "like" => "pins#upvote"
