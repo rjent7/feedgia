@@ -9,7 +9,7 @@
         <p><%= pin.description %></p>
         <p><strong><%= pin.user.name if pin.user %></strong></p>
         <%= link_to like_pin_path(pin), class: "like", method: :put do %>
-          <button type="button" class="btn btn-success btn-sm" aria-label="Left Align">Like
+          <button type="button" class="btn btn-primary btn-sm" aria-label="Left Align">Like
             <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
             <span class="badge"><%= pin.get_upvotes.size %></span>
           </button>

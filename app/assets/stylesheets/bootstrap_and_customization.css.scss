@@ -23,9 +23,14 @@ $jumbotron-bg:                               white;
      position: center;
      font-size: 21px;
 }
+	.navbar {
+		    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+   	}
 
 body {
-	background-image: image-url('abstract-background-trigon.jpg');
+	background: #ecf0f1;
 	background-size: auto;
 	padding-top: 70px;
 	background-repeat: repeat-y;
@@ -36,7 +41,7 @@ body {
 	background-size: cover;
 	font-family: 'Poiret One', cursive;
 	background-position: center;
-	background: rgba(0,0,0,0.5);
+	background: #e74c3c;
 }
 
 .jumbotron h1 {
