@@ -24,7 +24,7 @@ $jumbotron-bg:                               white;
      font-size: 21px;
 }
 	.navbar {
-		    -webkit-box-shadow: 0 8px 6px -6px #999;
+	-webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
    	}
@@ -41,7 +41,7 @@ body {
 	background-size: cover;
 	font-family: 'Poiret One', cursive;
 	background-position: center;
-	background: #e74c3c;
+	background: #2ecc71;
 }
 
 .jumbotron h1 {
@@ -74,6 +74,11 @@ small {
 
 .btn {
 	margin: 5px;
+}
+
+.btn-danger {
+	background: #f39c12;
+	border: #f39c12;
 }
 
 
