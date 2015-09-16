@@ -64,9 +64,6 @@ body {
 	font-family: 'Poiret One', cursive;
 }
 
-.alert.alert-info {
-	background: #e74c3c;
-}
 
 small {
 	padding-bottom:-45px;
@@ -79,6 +76,25 @@ small {
 .btn-danger {
 	background: #f39c12;
 	border: #f39c12;
+}
+
+.about {
+
+	h1 {
+		color: #fff;
+		letter-spacing: 8px;
+	}
+
+	h2 {
+		color: #fff;
+	}
+
+}
+
+.alert-info {
+	border: #40d47e;
+	color: #fff;
+	background: #40d47e;
 }
 
 

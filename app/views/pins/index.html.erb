@@ -1,38 +1,51 @@
-<%= render 'pages/home' unless user_signed_in? %>
+<!--<%= render 'pages/home' unless user_signed_in? %> -->
 
+<% if user_signed_in? %>
+  <div id="pins" class="transitions-enabled">
+    <% @pins.each do |pin| %>
+      <div class="box panel panel-default">
+        <%= link_to image_tag(pin.image.url(:medium)), pin %>
+        <div class="panel-body">
+          <p><%= pin.description %></p>
+          <p><strong><%= pin.user.name if pin.user %></strong></p>
+          <%= link_to like_pin_path(pin), class: "like", method: :put do %>
+            <button type="button" class="btn btn-primary btn-sm" aria-label="Left Align">Like
+              <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+              <span class="badge"><%= pin.get_upvotes.size %></span>
+            </button>
+          <% end %>
 
-<div id="pins" class="transitions-enabled">
-  <% @pins.each do |pin| %>
-    <div class="box panel panel-default">
-      <%= link_to image_tag(pin.image.url(:medium)), pin %>
-      <div class="panel-body">
-        <p><%= pin.description %></p>
-        <p><strong><%= pin.user.name if pin.user %></strong></p>
-        <%= link_to like_pin_path(pin), class: "like", method: :put do %>
-          <button type="button" class="btn btn-primary btn-sm" aria-label="Left Align">Like
-            <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
-            <span class="badge"><%= pin.get_upvotes.size %></span>
-          </button>
-        <% end %>
-
-        <% if pin.user == current_user %>
-          <div class="actions">
-            <%= link_to edit_pin_path(pin) do %>
-              <span class="glyphicon glyphicon-edit"></span>
-              Edit
-            <% end %>
-            <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <span class="glyphicon glyphicon-trash"></span>
-              Delete
-            <% end %>
-          </div>
-        <% end %>
-      
+          <% if pin.user == current_user %>
+            <div class="actions">
+              <%= link_to edit_pin_path(pin) do %>
+                <span class="glyphicon glyphicon-edit"></span>
+                Edit
+              <% end %>
+              <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                <span class="glyphicon glyphicon-trash"></span>
+                Delete
+              <% end %>
+            </div>
+          <% end %>
+        
+        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
+
+  <div class="center">
+     <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
+  </div>
+<% else %>
+
+  <h2 class="text-center">Welcome, Please Sign In.</h2>
+
+  <%= render 'pages/home' unless user_signed_in? %>
 </div>
 
-<div class="center">
-   <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
-</div>
+<% end %>
+
+
+
+
+
