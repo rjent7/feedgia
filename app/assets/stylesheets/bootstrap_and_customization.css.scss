@@ -30,7 +30,7 @@ $jumbotron-bg:                               white;
    	}
 
 body {
-	background: #bdc3c7;
+	background: #ecf0f1;
 	background-size: auto;
 	padding-top: 70px;
 	background-repeat: repeat-y;
@@ -98,8 +98,22 @@ small {
 }
 
 
+#infotech {
+  color: #fff;
+  background: #34495e;
+  text-align: center;
+  width: 100%;
+  padding: 70px 0;
+  font-size: 1.5em;
+}
 
+.imgit {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+  border: 2px solid #1abc9c;
+}
 
-
-
-
+.team li {
+  margin: 28px 0;
+}

@@ -27,7 +27,7 @@
               <% end %>
             </div>
           <% end %>
-        
+
         </div>
       </div>
     <% end %>
@@ -37,17 +37,8 @@
      <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
   </div>
 <% else %>
-  
-  <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Profiles!" data-placement="bottom" data-content="The ability to create your own profile...is now being developed by the team!    ** Feedgia is still far from being completed and this is still in a beta phase. **">Something is coming..</button>
-
-  <h2 class="text-center">Welcome, Please Sign In.</h2>
 
   <%= render 'pages/home' unless user_signed_in? %>
 </div>
 
 <% end %>
-
-
-
-
-

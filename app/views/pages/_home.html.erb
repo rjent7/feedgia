@@ -1,5 +1,6 @@
 <div class="jumbotron center">
  <div class="container">
+      <h2 style="color: #ecf0f1">Please sign in</h2>
      <h1>
      	<img src="http://www.bustler.net/images/uploads/animated_US_cities_SF.gif" class="img-responsive" style="border-radius: 35px;">
      </h1>
@@ -9,4 +10,13 @@
        	<%= link_to "Sign up", new_user_registration_path, class: "btn btn-danger btn-lg" %>
  		</p>
  </div>
+</div>
+
+<div class="jumbotron img-responsive" id="infotech">
+    <h2>Team Building <b>Profiles</b></h2>
+      <ul class="team">
+        <li>RJ: ActiveRecord::Base - <%= image_tag("rj.jpg" , class: "imgit") %></li>
+        <li>Jessi: Architect DB - <%= image_tag("jessi.jpg" , class: "imgit") %></li>
+        <li>Chase: Users::Profile - <%= image_tag("chase.jpg" , class: "imgit") %> </li>
+      </ul>
 </div>
